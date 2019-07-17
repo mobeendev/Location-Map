@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equatorial Marine Fuel Management Services Pte. Ltd.</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg bg-white page-navbar">
+    <div class="container">
+      <a class="navbar-brand logo" href="#">Equatorial Marine Fuel Management Services Pte. Ltd.</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav navbar-nav ml-auto">
+          <li class="nav-item item" role="presentation"><a class="nav-link active" href="#">Dashboard</a></li>
+          <li class="nav-item item" role="presentation"><a class="nav-link" href="#">Users</a></li>
+          <li class="nav-item item" role="presentation"><a class="nav-link" href="#">Destinations</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="map-example">
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="map"></div>
+        </div>
+        <div class="col-lg-4">
+          <div class="heading">
+            <h3>Active Routes</h3>
+
+          </div>
+
+          <form class="form-inline">
+
+            <div class="input-group mb-2 mr-sm-2">
+             <select class="browser-default custom-select" onchange="locatePosition(this.value)" >
+              <option selected>Open this select menu</option>
+              <option  value="0" >Gilgit</option>
+              <option  value="1">Islamabad</option>
+              <option  value="2">Lahore</option>
+              <option value="3">Jhelum</option>
+              <option value="4">Shah Faisal Colony</option>
+              <option value="5">Singapore</option>
+              <option value="8">Malaysia</option>
+              <option value="6">Jurong Island</option>
+              <option value="7">Pemping Island</option>
+            </select>
+          </div>
+          <button class="btn  btn-primary" onclick="resetMap()" style="
+          margin-bottom: 8px;
+          "> Reset Map</button>
+        </form>
+        <br>
+        <div>
+          <h5>Cover Regions Stats</h5>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">City</th>
+                <th scope="col">Requests</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Jurong Island</td>
+                <td id="loc1">12</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Islamabad</td>
+                <td id="loc2">23</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Pemping Island</td>
+                <td id="loc3">5</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <div class="info">
+          <p>Aenean convallis, tortor eget vehicula vestibulum, sem nibh rutrum sem, vel sodales nisl velit eu ex. Sed hendrerit efficitur sollicitudin. Maecenas tempus augue lacus.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="page-footer">
+  <div class="container">
+    <div class="links"><a href="#">mobeendev@gmail.com</a></div>
+  </div>
+</footer>
+
+<script>
+
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.25/gmaps.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjeJE5_YV9eQJKOawE1xWLKRh9Ufnwgic&callback=initMap"
+async defer></script>
+
+</body>
+
+</html>
